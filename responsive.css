@@ -1,0 +1,132 @@
+/* RESPONSIVE  */
+
+@media (max-width: 1200px) {
+    .container{
+        height: auto;
+        max-height: auto;
+        padding: 10px;
+        height: 8000px;
+    }
+    .section1, .section-1-1,
+    .section2, .section2-1, .section2-2,
+    .section3, .section-3-1, .section3-1,
+    .section4, .section4-1,
+    .section5, .section5-1, .section5-2, .section5-3,
+    .explain, .btn-success {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+    }
+}
+
+
+@media (min-width: 751px) and (max-width:1000px){
+    .container{
+        height: auto;
+        max-height: auto;
+        margin-right: 10px;
+        height: 8000px;
+    }
+    .section1, .section-1-1,
+    .section2, .section2-1, .section2-2,
+    .section3, .section-3-1, .section3-1,
+    .section4, .section4-1,
+    .section5, .section5-1, .section5-2, .section5-3,
+    .explain, .btn-success {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+    }
+}
+
+
+@media (max-width: 750px) {
+    .container{
+        height: auto;
+        max-height: auto;
+        padding: 10px;
+        height: 8000px;
+    }
+    .section1, .section-1-1,
+    .section2, .section2-1, .section2-2,
+    .section3, .section-3-1, .section3-1,
+    .section4, .section4-1,
+    .section5, .section5-1, .section5-2, .section5-3,
+    .explain, .btn-success {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+    }
+}
+
+
+@media (max-width: 680px) {
+    .container {
+        height: 7600px;
+        padding: 10px;
+    }
+    #title2 {
+        font-size: 16px;
+    }
+    .section1-2 #talent{width: 90%;}
+    .section5 img {
+        width: 90%;
+    }
+    #engPara{
+        width: 90%;
+
+    }
+}
+
+
+@media (max-width: 550px) {
+    #title2 {
+        font-size: 16px;
+    }
+    textarea, #skills {
+        width: 80%;
+        height: 70px;
+    }
+    .container{
+        height: 8300px;
+        background-color: #fff;
+        padding: 10px !important;
+        margin: 10px !important;
+    }
+    .section1, .section-1-1,
+    .section2, .section2-1, .section2-2,
+    .section3, .section-3-1, .section3-1,
+    .section4, .section4-1,
+    .section5, .section5-1, .section5-2, .section5-3,
+    .explain, .btn-success {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+    }
+} 
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .uploads {
+        width: 308px !important;
+        height: 140px !important;
+    }
+    #uploadFile {
+        font-size: 12px !important;
+        width: 290px !important;
+        margin-right: 6px !important;
+    }
+    .rounded {
+        margin-left: 20px !important;
+    }
+    body {
+        overflow-x: hidden !important;
+    }
+}

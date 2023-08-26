@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="Logo" href="Karyaar-Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Exam Form</title>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <center>
+                <img src="c00907-1-300x106-1.png" alt="Kaaryar Logo">
+                <h2 id="title"> فرم آزمون | Exam Form</h2>
+            </center>
+            <div class="explaination">
+                <h4> دوست عزیز </h4>
+                <h3> سلام </h3>
+                <p>
+                    از اینکه در مسیر رشد حرفه‌ای خود کاریار را انتخاب کرده‌اید خوشحالیم.
+                    <br />
+                    کاریار یک مدرسه کدنویسی متصل به بازار کار است. ما با ایجاد فرصت دسترسی همگانی به آموزش‌های باکیفیت
+                    در
+                    حوزه IT به مهارت آموزان کاریار کمک می‌کنیم مسیر شغلی خود را تعریف کنند و تا رسیدن به مرحله کارآموزی
+                    در کنارشان هستیم.
+                    <br />
+                    <br />
+                    تکمیل این فرم به معنای علاقمندی شما برای ورود به
+                    فرآیند پذیرش و شرکت در دوره های آموزشی مؤسسه کاریار با هدف اشتغال است. در صورت تکمیل این فرم جزییات
+                    دوره ها و مراحل پذیرش برای شما ارسال خواهد شد.
+                    <br />
+                    شما پس از تکمیل فرم ثبت نام اولیه، از طریق ایمیلی که در فرم
+                    یادداشت کرده‌اید، نهایتا طی یک هفته کاری، ایمیل رزرو ثبت نام را دریافت می کنید.
+                    <br />
+                    لطفا سوالات خود را از طریق ایمیل زیر با ما در میان بگذارید.
+                    <br />
+                
+                </p>
+                <br>
+            </div>
+
+        </div>
+
+        <hr class="rounded">
+
+
+        <!-- SECTION 1 -->
+
+        <div class="section1">
+
+            <h2 id="title2">بخش اول : وضعیت تحصیلی</h2>
+
+            <div class="section-1-1">
+
+                <div class="input-field">
+                    <label for="instituteTypes" aria-required="true">نوع موسسه آموزشی که آخرین مدرک خود را از آن
+                        گرفته‌اید</label><br>
+                    <select class="validate-dropdown" id="instituteType" name="instituteTypes" required="required">
+                        <option aria-required="true" value="">انتخاب کنید</option>
+                        <option value="دبیرستان / پیش‌دانشگاهی">دبیرستان / پیش‌دانشگاهی</option>
+                        <option value="هنرستان (فنی حرفه‌ای/کاردانش)">هنرستان (فنی حرفه‌ای/کاردانش)</option>
+                        <option value="دانشگاه آزاد">دانشگاه آزاد</option>
+                        <option value="دانشگاه دولتی">دانشگاه دولتی</option>
+                        <option value="موسسه آموزش عالی فنی حرفه‌ای">موسسه آموزش عالی فنی حرفه‌ای</option>
+                        <option value="دانشگاه پیام‌نور یا غیرانتفاعی یا پردیس"> دانشگاه پیام‌نور یا غیرانتفاعی یا پردیس
+                        </option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="lastInstitute">نام موسسه آموزشی که آخرین مدرک خود را از آن گرفته‌اید</label><br>
+                    <input class="validate-input" id="lastInstitute" name="lastInstitute" type="text"
+                        placeholder="جواب شما" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="isCurrentlyStudent">در حال حاضر مشغول به تحصیل هستید؟</label><br>
+                    <select class="validate-dropdown" id="isCurrentlyStudent" name="isCurrentlyStudent" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="true">بله</option>
+                        <option value="false">خیر</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="cgpa">در آخرین مقطع تحصیلی یا در مقطع تحصیلی جاری میانگین معدل شما چند بوده
+                        است؟</label><br>
+                    <select class="validate-dropdown" id="cgpa" name="cgpa" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="18تا20">۱۸ تا ۲۰</option>
+                        <option value="15تا17">۱۵ تا ۱۷</option>
+                        <option value="12تا15">۱۲ تا ۱۵</option>
+                        <option value="زیر12">زیر ۱۲</option>
+                    </select>
+                </div>
+                <div class="input-field instituteCurrentType hasdocument" style="display:none;">
+                    <label for="instituteCurrentType">نوع موسسه آموزشی که الان مشغول به تحصیل هستید؟</label><br>
+                    <select class="instituteCurrentType" id="instituteCurrentType" name="instituteCurrentType">
+                        <option value="">انتخاب کنید</option>
+                        <option class="stud" value="دبیرستان/پیش‌دانشگاهی">دبیرستان / پیش‌دانشگاهی</option>
+                        <option class="stud" value="هنرستان">هنرستان (فنی حرفه‌ای/کاردانش)</option>
+                        <option class="stud" value="دانشگاه آزاد">دانشگاه آزاد</option>
+                        <option class="stud" value="دانشگاه دولتی">دانشگاه دولتی</option>
+                        <option class="stud" value="فنی">موسسه آموزش عالی فنی حرفه‌ای</option>
+                        <option class="stud" value="پیام‌نور">دانشگاه پیام‌نور یا غیرانتفاعی یا پردیس</option>
+                        <option class="notStu" value="تحصیل نمیکنم">در حال حاضر مشغول به تحصیل نیستم</option>
+                    </select>
+                </div>
+
+                <div class="input-field currentInstName hasdocument" style="display:none;">
+                    <label for="currentInstName">نام موسسه آموزشی که الان مشغول به تحصیل هستید</label><br>
+                    <input id="currentInstName" class="currentInstName" name="currentInstName" type="text"
+                        placeholder="جواب شما">
+                </div>
+
+                <div>
+
+                    <div class="input-field currentField hasdocument hidden">
+                        <label for="currentField">نام رشته تحصیلی فعلی</label><br>
+                        <input id="currentField" name="currentField" type="text" placeholder="جواب شما">
+                    </div>
+
+
+                    <label class="title-upload" for="">آخرین کارنامه تحصیلی</label>
+                    <div class="uploads">
+                        <input type="file" id="uploadFile" name="filename"
+                            accept=".PNG, .JPG, .JPEG, .PDF, .png, .jpg, .jpeg, .pdf" onchange="preview()"
+                            required="required"></input>
+                        <label class="explainUpload" for="uploadFile">لطفا تصویر آخرین کارنامه تحصیلی خود را اینجا
+                            بارگذاری کنید. ترجیحا این کارنامه شامل نمرات مرتبط با دروس ریاضی،آمار و زبان انگلیسی
+                            باشد</label>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="input-field explain">
+                    <label for="skills">در مورد تجربه یا استعداد تحصیلی دیگری که دارید توضیح دهید:</label><br>
+                    <textarea class="validate-input" id="skills" name="skills" rows="4" cols="50" required></textarea>
+                </div>
+
+
+            </div>
+
+
+            <hr class="rounded">
+
+        </div>
+
+
+
+        <!-- SECTION 2 -->
+
+        <div class="section2">
+
+            <h2 id="title2">بخش دوم : وضعیت اشتغال</h2>
+
+            <div class="input-field">
+                <label for="jobStatus">وضعیت اشتغال شما چگونه است؟</label><br>
+                <select class="validate-dropdown" id="jobStatus" name="jobStatus" required onchange="jobStatusChanged(this)">
+                    <option value="">انتخاب کنید</option>
+                    <option value="مشغول کار منجر به درآمد هستم">مشغول کار منجر به درآمد هستم</option>
+                    <option value="مشغول کار منجر به درآمد نیستم">مشغول کار منجر به درآمد نیستم</option>
+                </select>
+            </div>
+
+            <div class="nonJobActive2">
+
+                <div class="inputfield noneJobActivation nistam hidden">
+                    <fieldset id="noneJobActivation" class="validate-checkboxfield" required>
+                        <legend style="border: 0px;">
+                            مشغولیت‌های فعلی خود را علامت بزنید
+                        </legend>
+                        <label for="noneJobActivation1"><input id="noneJobActivation1" class="item" type="checkbox"
+                                checked="checked" name="noneJobActivation" required value="آموزش غیر آکادمیک ( مانند کلاس ورزش حرفه ای و کلاس زبان و غیره)">آموزش غیر
+                            آکادمیک ( مانند کلاس ورزش حرفه ای و کلاس زبان و غیره)</label>
+                        <br>
+                        <label for="noneJobActivation2"><input id="noneJobActivation2" class="item" type="checkbox"
+                                name="noneJobActivation" value="خانه‌ دار">خانه دار</label>
+                        <br>
+                        <label for="noneJobActivation3"><input id="noneJobActivation3" class="item" type="checkbox"
+                                name="noneJobActivation" value="جویای کار">جویای کار</label>
+                        <br>
+                        <label for="noneJobActivation4"><input id="noneJobActivation4" class="item" type="checkbox"
+                                name="noneJobActivation" value="دانش آموز/ دانشجو">دانش‌آموز/ دانشجو</label>
+                    </fieldset>
+                </div>
+
+            </div>
+
+            <div class="section2-1 hastam hidden">
+
+                <div class="input-field">
+                    <label for="employmentType">نوع کار خود را مشخص کنید؟</label><br>
+                    <select class="hastam" id="employmentType" name="employmentType">
+                        <option value="">انتخاب کنید</option>
+                        <option value="رسمی">استخدام رسمی</option>
+                        <option value="غیره">غیره</option>
+                    </select>
+                </div>
+
+                <div class="input-field avgSalary">
+                    <label for="avgSalary">متوسط حقوق ماهیانه شما حدودا چقدر است؟</label><br>
+                    <select class="hastam" id="avgSalary" name="avgSalary">
+                        <option value="">انتخاب کنید</option>
+                        <option value="کمتر از دومیلیون تومان">کمتر از دو میلیون تومان</option>
+                        <option value="بین۲تا۵ میلیون تومان">بین دو تا پنج میلیون تومان</option>
+                        <option value="بیشتراز5میلیون تومان">بیشتر از پنج میلیون تومان</option>
+                    </select>
+                </div>
+
+                <div class="input-field avgSalary">
+                    <label for="employmentTimeCommitment">در طول روز چند ساعت از زمان و انرژی خود را صرف کار
+                        می‌کنید</label><br>
+                    <select class="hastam" id="employmentTimeCommitment" name="employmentTimeCommitment">
+                        <option value="">انتخاب کنید</option>
+                        <option value="1تا3">۱ تا ۳ ساعت</option>
+                        <option value="3تا5">۳ تا ۵ ساعت</option>
+                        <option value="5تا7">۵ تا ۷ ساعت</option>
+                        <option value="7تا9">۷ تا ۹ ساعت</option>
+                        <option value="بیشتراز۹ساعت">بیشتر از ۹ ساعت</option>
+                    </select>
+                </div>
+
+                <div class="input-field explain">
+                    <label for="jobTitle">لطفا نوع شغل و سمت دقیق خود را بنویسید.</label><br>
+                    <textarea id="jobTitle" name="jobTitle" rows="4" cols="50"
+                        placeholder="مثال: من منشی شرکت نرم افزاری راه گستر هستم/ من فروشنده بخش مواد غذایی فروشگاه شهروند هستم"></textarea>
+                </div>
+
+            </div>
+
+
+            <hr class="rounded2">
+
+
+            <div class="section2-2">
+
+                <div class="false ">
+                    <label for="accessTime">در حال حاضر در طول روز چند ساعت وقت آزاد دارید که می توانید به مطالعه و
+                        تمرین دوره های آموزشی کاریار اختصاص دهید؟</label><br>
+                    <select class="validate-dropdown" id="accessTime" name="accessTime" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="کمتراز۲ساعت">کمتر از دو ساعت</option>
+                        <option value="بین۱تا۳ساعت">بین یک تا سه ساعت</option>
+                        <option value="بین۳تا۵ساعت">بین سه تا پنج ساعت</option>
+                        <option value="بین۵تا۷ساعت">بین پنج تا هفت ساعت</option>
+                        <option value="بیشتراز۷ساعت">بیشتر از هفت ساعت</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="jobStandby">من آمادگی دارم بلافاصله بعد از گذراندان دوره‌های آموزشی کاریار، وارد بازار
+                        کار در حوزه (it) شوم</label><br>
+                    <select class="validate-dropdown" id="jobStandby" name="jobStandby" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="true">بله</option>
+                        <option value="false">خیر</option>
+                    </select>
+                </div>
+
+                <div class="input-field jobVision">
+                    <label for="jobVision">لطفا درباره چشم انداز شغلی که برای دو سال آینده برای خود درنظر گرفته اید
+                        بنویسید:</label><br>
+                    <textarea id="jobVision" class="jobVision validate-input" name="jobVision" rows="4" cols="50" required></textarea>
+                </div>
+
+                <div class="input-field explain webDevFamiliarity">
+                    <label for="webDevFamiliarity">آیا با مشاغل مرتبط با مهارت های برنامه نویسی و طراحی وب آشنایی دارید؟
+                        اگر بله یک مورد را نام ببرید.</label><br>
+                    <textarea id="webDevFamiliarity" class="webDevFamiliarity validate-input" name="webDevFamiliarity" rows="4"
+                        cols="50" required></textarea>
+                </div>
+
+
+            </div>
+
+            <hr class="rounded">
+
+        </div>
+
+
+
+        <!-- SECTION 3 -->
+
+        <div class="section3">
+
+            <h2 id="title2">بخش سوم : دسترسی به کامپیوتر</h2>
+
+            <div class="section-3-1">
+
+                <div class="inputfield">
+                    <fieldset id="computerFamiliarity" class="validate-checkboxfield" required>
+                        <legend style="border: 0px;">
+                            کدام یک از موارد زیر در مورد شما صدق می کند (می توانید بیش از یک گزینه را انتخاب کنید) :
+                        </legend>
+                        <label for="computerFamiliarity1"><input id="computerFamiliarity1" class="item" type="checkbox"
+                                name="computerFamiliarity" required
+                                value="هر کامپیوتر یا لپتاپ جدیدی را می توانم روشن کنم و با آن شروع به کار کنم.">هر
+                            کامپیوتر یا لپتاپ جدیدی را می توانم روشن کنم و با آن شروع به کار کنم.</label>
+                        <br>
+                        <label for="computerFamiliarity2"><input id="computerFamiliarity2" class="item" type="checkbox"
+                                name="computerFamiliarity" required
+                                value="می توانم در ویندوز، پوشه (Folder) جدید ایجاد کنم و فایل های خودم را در آن کپی (Copy-Paste) کنم.">می
+                            توانم در ویندوز، پوشه (Folder) جدید ایجاد کنم و فایل های خودم را در آن کپی (Copy-Paste)
+                            کنم.</label>
+                        <br>
+                        <label for="computerFamiliarity3"><input id="computerFamiliarity3" class="item" type="checkbox"
+                                name="computerFamiliarity" required
+                                value="می توانم اطلاعات را با استفاده از فلش (USB Flash Disk) از یک کامپیوتر به کامپیوتر دیگر انتقال دهم.">می
+                            توانم اطلاعات را با استفاده از فلش (USB Flash Disk) از یک کامپیوتر به کامپیوتر دیگر انتقال
+                            دهم.</label>
+                        <br>
+                        <label for="computerFamiliarity4"><input id="computerFamiliarity4" class="item" type="checkbox"
+                                name="computerFamiliarity" required
+                                value="می توانم از نرم افزار Word برای تایپ نامه، از Powerpoint برای تهیه ارائه ها و از Excel برای حسابداری شخصی استفاده کنم">می
+                            توانم از نرم افزار Word برای تایپ نامه، از Powerpoint برای تهیه ارائه ها و از Excel برای
+                            حسابداری شخصی استفاده کنم</label>
+                        <br>
+                        <label for="computerFamiliarity5"><input id="computerFamiliarity5" class="item" type="checkbox"
+                                name="computerFamiliarity" required
+                                value="از برنامه های Skype، Zoom یا Google Meet برای تماس های تصویری استفاده می کنم.">از
+                            برنامه های Skype، Zoom یا Google Meet برای تماس های تصویری استفاده می کنم.</label>
+                        <br>
+                        <label for="computerFamiliarity6"><input id="computerFamiliarity6" class="item" type="checkbox"
+                                name="computerFamiliarity" required
+                                value="می توانم حین یک تماس تصویری، صفحه نمایش کامپیوترم را به طور زنده با دیگران به اشتراک بگذارم.">می
+                            توانم حین یک تماس تصویری، صفحه نمایش کامپیوترم را به طور زنده با دیگران به اشتراک
+                            بگذارم.</label>
+                        <br>
+                        <label for="computerFamiliarity7"><input id="computerFamiliarity7" class="enable"
+                                type="checkbox" name="computerFamiliarity" required value="همه موارد">همه
+                            موارد</label>
+                    </fieldset>
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="section3-1">
+
+                <div class="input-field">
+                    <label for="computerAccess">شما چه اندازه به کامپیوتر دسترسی دارید؟</label><br>
+                    <select class="validate-dropdown" id="computerAccess" name="computerAccess" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="در مکان عمومی">دسترسی در مکان عمومی (کافی نت/سایت دانشگاه)</option>
+                        <option value="دسترسی اشتراکی">دسترسی اشتراکی (با اعضای خانواده/دوستان)</option>
+                        <option value="کامپیوتر شخصی">کامپیوتر شخصی (تمام وقت)</option>
+                        <option value="دسترسی ندارم">دسترسی ندارم</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="internetAccessDevice">با چه وسیله‌ای به اینترنت دسترسی دارید؟</label><br>
+                    <select class="validate-dropdown" id="internetAccessDevice" name="internetAccessDevice" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="با موبایل">با موبایل</option>
+                        <option value="با کامپیوتر">با کامپیوتر</option>
+                        <option value="هردو">با موبایل و کامپیوتر هردو</option>
+                        <option value="دسترسی ندارم">دسترسی ندارم</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="internetAccessTiming">چند ساعت در روز به اینترنت دسترسی دارید؟</label><br>
+                    <select class="validate-dropdown" id="internetAccessTiming" name="internetAccessTiming" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="تا2ساعت">تا ۲ ساعت</option>
+                        <option value="تا6ساعت">تا ۶ ساعت</option>
+                        <option value="تمام وقت">تمام وقت</option>
+                        <option value="دسترسی ندارم">دسترسی ندارم</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="codingKnowledge">آیا تا به حال دوره آموزشی در ارتباط با مهارت های کامپیوتریا کدنویسی
+                        گذرانده اید؟ اگر بله لطفا نام دوره را ذکر کنید. چه زمانی؟ چه دوره ای؟</label><br>
+                    <textarea id="codingKnowledge" class="validate-input" name="codingKnowledge" rows="4" cols="50" required></textarea>
+                </div>
+
+
+
+
+            </div>
+
+            <hr class="rounded">
+
+        </div>
+
+
+        <!-- SECTION 4  -->
+
+        <div class="section4">
+
+            <h2 id="title2">بخش چهارم : مدیریت زمان</h2>
+
+            <div class="section4-1">
+
+                <div class="input-field">
+                    <label for="limitTime">در آگهی فراخوان موسسه‌ی کاریار تاکید شده است که به طور پیوسته هفته‌ای ۲۰ ساعت
+                        برای شرکت در کلاس‌ها، انجام تکالیف و مطالعه دروس زمان نیاز خواهید داشت. آیا محدودیت زمانی از این
+                        جهت دارید؟</label>
+                    <select class="validate-dropdown" id="limitTime" name="limitTime" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="محدودیت دارم">بله محدودیت دارم</option>
+                        <option value="محدودیت ندارم">خیر محدودیت ندارم</option>
+                        <option value="محدودیت دارم ولی میتوانم آنرا کنترل کنم">بله محدودیت دارم ولی می توانم آن را
+                            مدیریت کنم</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="motivation">انگیزه اصلی شما برای ورود به این دوره آموزشی چیست؟</label><br>
+                    <select class="validate-dropdown" id="motivation" name="motivation" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="آمادگی برای ورود به کار">کسب آمادگی برای ورود به بازار کار</option>
+                        <option value="ارتقا شغلی">ارتقاء شغلی</option>
+                        <option value="افزایش دانش">افزایش دانش</option>
+                        <option value="سایر">سایر</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <hr class="rounded">
+
+        </div>
+
+
+
+        <!-- SECTION 5  -->
+
+        <div class="section5">
+
+            <h2 id="title2">بخش پنجم : سنجش مهارت‌های پایه</h2>
+
+
+            <div class="section5-1">
+
+                <div class="false queCit">
+                    <fieldset id="questionCityFieldset" class="validate-selectfield" required>
+                        <legend style="border:0px">
+                            یک شهر خیالی دارای سه ناحیه است به نام های الف، ب و ج. مردم هر یک از این سه ناحیه ویژگی های
+                            مختلفی دارند.
+                            مردم بخش الف همیشه راست می گویند. مردم بخش ب همیشه دروغ می گویند
+                            و مردم بخش ج به نوبت یک بار راست می گویند و یک بار دروغ .
+                            یک روز به آتشنشانی که در منطقه الف قرار دارد تماسی گرفته می شود. در ادامه شرح این تماس آمده
+                            است:
+                            فرد ناشناس: عجله کنید، در منطقه ما باران شهاب سنگ باریده است
+                            و همه جا آتش گرفته است. آتشنشان: در کدام منطقه ای؟ فرد ناشناس: در منطقه ج هستم. تماس قطع می
+                            شود، به نظر شما آتشنشان چه باید بکند؟
+                        </legend>
+                        <br>
+                        <label for="questionCity1"><input id="questionCity1" type="radio" name="questionCity"
+                                value="الف" required>به منطقه الف برود</label>
+                        <br>
+                        <label for="questionCity2"><input id="questionCity2" type="radio" name="questionCity" value="ب"
+                                required>به منطقه ب بروند</label>
+                        <br>
+                        <label for="questionCity3"><input id="questionCity3" type="radio" name="questionCity" value="ج"
+                                required>به منطقه ج برود</label>
+                        <br>
+                        <label for="questionCity4"><input id="questionCity4" type="radio" name="questionCity"
+                                value="آتش سوزی نیست" required>در هیچ منطقه آتش سوزی رخ نداده است.</label>
+                    </fieldset>
+                </div>
+
+
+                <div class="false queStu">
+                    <fieldset id="questionStudents" class="validate-selectfield" required>
+                        <legend style="border:0px">
+                            در یک موسسه آموزش کامپیوتر، سه کلاس مختلف وجود دارد که نرخ فارغ التحصیلی آنها ۵۰% و ۶۰% و
+                            ۸۰% است.
+                            اگر ظرفیت این کلاس ها به ترتیب ۲۰ و ۳۰ و ۴۰ نفر باشد و نرخ اشتغال به کار فارغ التحصیلان ۹۰%
+                            باشد، نرخ متوسط اشتغال مهارت آموزان آموزشگاه چقدر است؟
+                        </legend>
+                        <br>
+                        <label for="questionStudents1"><input id="questionStudents1" type="radio"
+                                name="questionStudents" required value="90">۹۰%</label>
+                        <br>
+                        <label for="questionStudents2"><input id="questionStudents2" type="radio"
+                                name="questionStudents" required value="80">۸۰%</label>
+                        <br>
+                        <label for="questionStudents3"><input id="questionStudents3" type="radio"
+                                name="questionStudents" required value="75">۷۵%</label>
+                        <br>
+                        <label for="questionStudents4"><input id="questionStudents4" type="radio"
+                                name="questionStudents" required value="60">۶۰%</label>
+                    </fieldset>
+                </div>
+
+                <div class="false queNum">
+                    <fieldset id="questionNumbers" class="validate-selectfield" required>
+                        <legend style="border:0px">
+                            در نوشتن اعداد طبیعی از ۱۰۰ تا ۲۰۰ چند بار عدد ۱ به کار می رود؟
+                        </legend>
+                        <br>
+                        <label for="questionNumbers1"><input id="questionNumbers1" type="radio" name="questionNumbers"
+                                required value="110">۱۱۰</label>
+                        <br>
+                        <label for="questionNumbers2"><input id="questionNumbers2" type="radio" name="questionNumbers"
+                                required value="115">۱۱۵</label>
+                        <br>
+                        <label for="questionNumbers3"><input id="questionNumbers3" type="radio" name="questionNumbers"
+                                required value="118">۱۱۸</label>
+                        <br>
+                        <label for="questionNumbers4"><input id="questionNumbers4" type="radio" name="questionNumbers"
+                                required value="120">۱۲۰</label>
+                    </fieldset>
+                </div>
+
+                <div class="false queDia">
+                    <fieldset id="questionDiameters" class="validate-selectfield" required>
+                        <legend style="border:0px">
+                            یک هفت ضلعی چند قطر دارد؟
+                        </legend>
+                        <br>
+                        <label for="questionDiameters1"><input id="questionDiameters1" type="radio"
+                                name="questionDiameters" required value="7">هفت قطر</label>
+                        <br>
+                        <label for="questionDiameters2"><input id="questionDiameters2" type="radio"
+                                name="questionDiameters" required value="12">دوازده قطر</label>
+                        <br>
+                        <label for="questionDiameters3"><input id="questionDiameters3" type="radio"
+                                name="questionDiameters" required value="14">چهارده قطر</label>
+                        <br>
+                        <label for="questionDiameters4"><input id="questionDiameters4" type="radio"
+                                name="questionDiameters" required value="28">بیست و هشت قطر</label>
+                    </fieldset>
+                </div>
+
+                <div class="false queMulti">
+                    <fieldset id="questionMultiplication" class="validate-selectfield" required>
+                        <legend style="border:0px">
+                            حاصلضرب همه ی اعداد ۱ تا ۵۰ به چند صفر ختم می شود؟
+                            [راهنمایی : صفر همواره از حاصلضرب مضارب ۲ و مضارب ۵ به دست می آید. برای مثال عدد ۲۰ به این
+                            دلیل دارای صفر است که حاصلضرب ۴ در ۵ است، یعنی ترکیبی از دو عدد ۲ و یک عدد ۵ است] <br>
+                        </legend>
+                        <br>
+                        <label for="questionMultiplication1"><input id="questionMultiplication1" type="radio"
+                                name="questionMultiplication" required value="9">۹</label>
+                        <br>
+                        <label for="questionMultiplication2"><input id="questionMultiplication2" type="radio"
+                                name="questionMultiplication" required value="10">۱۰</label>
+                        <br>
+                        <label for="questionMultiplication3"><input id="questionMultiplication3" type="radio"
+                                name="questionMultiplication" required value="11">۱۱</label>
+                        <br>
+                        <label for="questionMultiplication4"><input id="questionMultiplication4" type="radio"
+                                name="questionMultiplication" required value="12">۱۲</label>
+
+                </div>
+
+                <div class="false queWord">
+                    <fieldset id="questionWords" class="validate-selectfield" required>
+                        <legend style="border:0px">
+                            از کنار هم گذاشتن اشکال زیر چه حرفی تولید می شود؟
+                        </legend>
+                        <br>
+                        <img src="Untitled.png" alt="">
+                        <br><br>
+                        <label for="questionWords1"><input id="questionWords1" type="radio" name="questionWords"
+                                required value="E">E</label>
+                        <!-- <br> -->
+                        <label for="questionWords2"><input id="questionWords2" type="radio" name="questionWords"
+                                required value="F">F</label>
+                        <!-- <br> -->
+                        <label for="questionWords3"><input id="questionWords3" type="radio" name="questionWords"
+                                required value="H">H</label>
+                        <!-- <br> -->
+                        <label for="questionWords4"><input id="questionWords4" type="radio" name="questionWords"
+                                required value="N">N</label>
+                    </fieldset>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="section-5-2">
+
+                <h6>با هر کدام از سرفصل‌های زیر تا چه اندازه آشنایی دارید؟</h6>
+                <div class="section5-2">
+
+                    <div class="section5-2-1">
+                        <fieldset id="levelDiscreteMath" class="validate-selectfield" required>
+                            <legend style="border:0px">
+                                ریاضیات گسسته
+                            </legend>
+                            <label for="levelDiscreteMath1"><input type="radio" id="levelDiscreteMath1"
+                                    name="levelDiscreteMath" required value="1">اصلا آشنایی ندارم</label>
+                            <br>
+                            <label for="levelDiscreteMath2"><input type="radio" id="levelDiscreteMath2"
+                                    name="levelDiscreteMath" required value="2">کمی آشنایی دارم</label>
+                            <br>
+                            <label for="levelDiscreteMath3"><input type="radio" id="levelDiscreteMath3"
+                                    name="levelDiscreteMath" required value="3">تا اندازه‌ای بلد هستم</label>
+                            <br>
+                            <label for="levelDiscreteMath4"><input type="radio" id="levelDiscreteMath4"
+                                    name="levelDiscreteMath" required value="4">به خوبی بلد هستم</label>
+                            <br>
+                            <label for="levelDiscreteMath5"><input type="radio" id="levelDiscreteMath5"
+                                    name="levelDiscreteMath" required value="5">میتوانم آموزش دهم</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="section5-2-2">
+                        <fieldset id="levelLinearAlgebra" class="validate-selectfield" required>
+                            <legend style="border: 0px;">
+                                جبر خطی
+                            </legend>
+                            <label for="levelLinearAlgebra1"><input type="radio" id="levelLinearAlgebra1"
+                                    name="levelLinearAlgebra" required value="1">اصلا آشنایی ندارم</label>
+                            <br>
+                            <label for="levelLinearAlgebra2"><input type="radio" id="levelLinearAlgebra2"
+                                    name="levelLinearAlgebra" required value="2">کمی آشنایی دارم</label>
+                            <br>
+                            <label for="levelLinearAlgebra3"><input type="radio" id="levelLinearAlgebra3"
+                                    name="levelLinearAlgebra" required value="3">تا اندازه‌ای بلد هستم</label>
+                            <br>
+                            <label for="levelLinearAlgebra4"><input type="radio" id="levelLinearAlgebra4"
+                                    name="levelLinearAlgebra" required value="4">به خوبی بلد هستم</label>
+                            <br>
+                            <label for="levelLinearAlgebra5"><input type="radio" id="levelLinearAlgebra5"
+                                    name="levelLinearAlgebra" required value="5">میتوانم آموزش دهم</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="section5-2-3">
+                        <fieldset id="levelProbabilities" class="validate-selectfield" require>
+                            <legend>
+                                آمار و احتمال
+                            </legend>
+
+                            <label for="levelProbabilities1"><input type="radio" id="levelProbabilities1"
+                                    name="levelProbabilities" required value="1">اصلا آشنایی ندارم</label>
+                            <br>
+                            <label for="levelProbabilities2"><input type="radio" id="levelProbabilities2"
+                                    name="levelProbabilities" required value="2">کمی آشنایی دارم</label>
+                            <br>
+                            <label for="levelProbabilities3"><input type="radio" id="levelProbabilities3"
+                                    name="levelProbabilities" required value="3">تا اندازه‌ای بلد هستم</label>
+                            <br>
+                            <label for="levelProbabilities4"><input type="radio" id="levelProbabilities4"
+                                    name="levelProbabilities" required value="4">به خوبی بلد هستم</label>
+                            <br>
+                            <label for="levelProbabilities5"><input type="radio" id="levelProbabilities5"
+                                    name="levelProbabilities" required value="5">میتوانم آموزش دهم</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="section5-2-4">
+                        <fieldset id="levelFlowDiagrams" class="validate-selectfield" required>
+                            <legend>
+                                فلوچارت
+                            </legend>
+                            <label for="levelFlowDiagrams1"><input type="radio" id="levelFlowDiagrams1"
+                                    name="levelFlowDiagrams" required value="1">اصلا آشنایی ندارم</label>
+                            <br>
+                            <label for="levelFlowDiagrams2"><input type="radio" id="levelFlowDiagrams2"
+                                    name="levelFlowDiagrams" required value="2">کمی آشنایی دارم</label>
+                            <br>
+                            <label for="levelFlowDiagrams3"><input type="radio" id="levelFlowDiagrams3"
+                                    name="levelFlowDiagrams" required value="3">تا اندازه‌ای بلد هستم</label>
+                            <br>
+                            <label for="levelFlowDiagrams4"><input type="radio" id="levelFlowDiagrams4"
+                                    name="levelFlowDiagrams" required value="4">به خوبی بلد هستم</label>
+                            <br>
+                            <label for="levelFlowDiagrams5"><input type="radio" id="levelFlowDiagrams5"
+                                    name="levelFlowDiagrams" required value="5">میتوانم آموزش دهم</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="section5-2-5">
+                        <fieldset id="levelAlgorithms" class="validate-selectfield" required>
+                            <legend>
+                                الگوریتم
+                            </legend>
+                            <label for="levelAlgorithms1"><input type="radio" id="levelAlgorithms1"
+                                    name="levelAlgorithms" required value="1">اصلا آشنایی ندارم</label>
+                            <br>
+                            <label for="levelAlgorithms2"><input type="radio" id="levelAlgorithms2"
+                                    name="levelAlgorithms" required value="2">کمی آشنایی دارم</label>
+                            <br>
+                            <label for="levelAlgorithms3"><input type="radio" id="levelAlgorithms3"
+                                    name="levelAlgorithms" required value="3">تا اندازه‌ای بلد هستم</label>
+                            <br>
+                            <label for="levelAlgorithms4"><input type="radio" id="levelAlgorithms4"
+                                    name="levelAlgorithms" required value="4">به خوبی بلد هستم</label>
+                            <br>
+                            <label for="levelAlgorithms5"><input type="radio" id="levelAlgorithms5"
+                                    name="levelAlgorithms" required value="5">میتوانم آموزش دهم</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="section5-2-6">
+                        <fieldset id="levelDataStructures" class="validate-selectfield" required>
+                            <legend>
+                                ساختارهای داده
+                            </legend>
+                            <label for="levelDataStructures1"><input type="radio" id="levelDataStructures1"
+                                    name="levelDataStructures" required value="1">اصلا آشنایی ندارم</label>
+                            <br>
+                            <label for="levelDataStructures2"><input type="radio" id="levelDataStructures2"
+                                    name="levelDataStructures" required value="2">کمی آشنایی دارم</label>
+                            <br>
+                            <label for="levelDataStructures3"><input type="radio" id="levelDataStructures3"
+                                    name="levelDataStructures" required value="3">تا اندازه‌ای بلد هستم</label>
+                            <br>
+                            <label for="levelDataStructures4"><input type="radio" id="levelDataStructures4"
+                                    name="levelDataStructures" required value="4">به خوبی بلد هستم</label>
+                            <br>
+                            <label for="levelDataStructures5"><input type="radio" id="levelDataStructures5"
+                                    name="levelDataStructures" required value="5">میتوانم آموزش دهم</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="section5-2-7">
+                        <fieldset id="levelLogics" class="validate-selectfield" required>
+                            <legend style="border: 0px;">
+                                منطق (Logic)
+                            </legend>
+                            <label for="levelLogics1"> <input type="radio" id="levelLogics1" name="levelLogics" required
+                                    value="1">اصلا آشنایی ندارم</label>
+                            <br>
+                            <label for="levelLogics2"> <input type="radio" id="levelLogics2" name="levelLogics" required
+                                    value="2">کمی آشنایی دارم</label>
+                            <br>
+                            <label for="levelLogics3"> <input type="radio" id="levelLogics3" name="levelLogics" required
+                                    value="3">تا اندازه‌ای بلد هستم</label>
+                            <br>
+                            <label for="levelLogics4"> <input type="radio" id="levelLogics4" name="levelLogics" required
+                                    value="4">به خوبی بلد هستم</label>
+                            <br>
+                            <label for="levelLogics5"> <input type="radio" id="levelLogics5" name="levelLogics" required
+                                    value="5">میتوانم آموزش دهم</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+
+
+            <div class="section5-3">
+
+                <div class="false">
+                    <fieldset id="questionEnglishFamiliarity" class="validate-selectfield" required>
+                        <legend style="border:0px">
+                            چقدر با زبان انگلیسی آشنایی دارید؟
+                        </legend>
+                        <label for="questionEnglishFamiliarity1"><input id="questionEnglishFamiliarity1" type="radio"
+                                name="questionEnglishFamiliarity" required value="1">1 (در حد دبیرستان)</label>
+                        <br>
+                        <label for="questionEnglishFamiliarity2"><input id="questionEnglishFamiliarity2" type="radio"
+                                name="questionEnglishFamiliarity" required value="2">2</label>
+                        <br>
+                        <label for="questionEnglishFamiliarity3"><input id="questionEnglishFamiliarity3" type="radio"
+                                name="questionEnglishFamiliarity" required value="3">3</label>
+                        <br>
+                        <label for="questionEnglishFamiliarity4"><input id="questionEnglishFamiliarity4" type="radio"
+                                name="questionEnglishFamiliarity" required value="4">4</label>
+                        <br>
+                        <label for="questionEnglishFamiliarity5"><input id="questionEnglishFamiliarity5" type="radio"
+                                name="questionEnglishFamiliarity" required value="5">5 (در حد آیلتس یا تافل)</label>
+                </div>
+
+                <div class="input-field explain">
+                    <label for="engPara" style="direction: ltr;">Please write a short paragraph about yourself (in English/min 100 Character).</label><br>
+                    <textarea id="engPara" class="validate-input" name="engPara" rows="4" cols="50" minlength="100" maxlength="150" style="direction: ltr;" required></textarea>
+                </div>
+
+
+            </div>
+
+
+
+            <hr class="rounded">
+
+        </div>
+
+        <!-- LAST SECTION  -->
+        <center>
+
+            <div class="input-field explain">
+                <label for="applicantAdditionalComments">با تشکر از زمانی که برای تکمیل این پرسشنامه گذاشتید، <br>
+                    اگر لازم می دانید اطلاعات دیگری در مورد خود، توانایی ها،
+                    علاقمندی ها یا محدودیت هایتان برای ما بنویسید.
+                    <br>
+                    با تشکر، تیم کاریار</label><br>
+                <textarea id="applicantAdditionalComments" name="applicantAdditionalComments" rows="4"
+                    cols="50"></textarea>
+            </div>
+
+        </center>
+
+        <!-- BUTTON  -->
+
+        <div id="button">
+
+            <button type="button" class="btn btn-success" id="submit">ثبت فرم</button>
+            <i class="uil uil-navigator"></i>
+
+        </div>
+
+
+
+    </div>
+
+    <script src=""></script>r
+    <script src="./js/main4.js"></script>
+    <script src="./js/main5.js"></script>
+
+
+
+</body>
+
+</html>
